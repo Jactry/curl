@@ -1,0 +1,5 @@
+build:
+  image: ubuntu/gcc
+  commands:
+    - ./buildconf
+    - ./configure --enable-debug && make && make test-full
